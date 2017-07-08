@@ -75,4 +75,8 @@
   :config
   (editorconfig-mode 1))
 
+(use-package npm-mode
+  :config
+  (npm-global-mode))
+
 (provide 'lang-javascript)
