@@ -18,7 +18,6 @@
 (require 'base-extensions)
 (require 'base-functions)
 (require 'base-global-keys)
-
+(require 'org-extensions)
 (require 'lang-javascript)
-
 (require 'lang-web)
