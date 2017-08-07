@@ -5,23 +5,24 @@
   (setq org-publish-project-alist
     '(
        ("org-notes"
-         :base-directory "~/org/"
+         :base-directory "~/notes/article"
          :base-extension "org"
-         :publishing-directory "~/public_html/"
+         :publishing-directory "~/notes_html/"
          :recursive t
          :html-doctype "html5"
          :html-head-include-default-style nil
          :html-head-include-scripts nil
-         :html-head "<link rel='stylesheet' type='text/css' href='assets/css/worg.css' />"
+         :html-head "<link rel='stylesheet' type='text/css' href='/assets/css/worg.css' />"
          ;; :html-use-infojs t
          :html-preamble t
+         :auto-sitemap t
          :publishing-function org-html-publish-to-html
          :headline-levels 4
          :auto-preamble t)
        ("org-static"
-         :base-directory "~/org/"
+         :base-directory "~/notes/"
          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-         :publishing-directory "~/public_html/"
+         :publishing-directory "~/notes_html/"
          :recursive t
          :publishing-function org-publish-attachment)
        ("note"
