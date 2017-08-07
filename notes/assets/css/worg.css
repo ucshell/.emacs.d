@@ -1,14 +1,40 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif);
-
-navbar {
-
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    min-width: 900px;
+    border-bottom: 1px solid #e1e1e1;
 }
+
+.navbar {
+
+    list-style: none;
+    display: flex;
+}
+
+.navbar > .nav-item {
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar > .nav-item > .nav-link {
+    text-decoration: none;
+    color: grey;
+}
+
+#table-of-contents, #content {
+    margin-top: 6rem;
+}
+
 @media all
 {
   html {
 	  margin: 0;
 	  font: .9em/1.6em "Droid Serif", Cambria, Georgia, "DejaVu Serif", serif;
-	  background-image: url(http://orgmode.org/img/org-mode-unicorn-logo-worg.png);
+	  /*background-image: url(http://orgmode.org/img/org-mode-unicorn-logo-worg.png);*/
 	  background-attachment: fixed;
 	  background-position: right bottom;
 	  background-repeat: no-repeat;
@@ -23,13 +49,13 @@ navbar {
 
   }
   body #content {
-	  padding-top: 0px;
 	  max-width: 80%;
 	  min-width: 700px;
 	  margin-left: 20px;
 	  background-color: white;
 	  padding: 2em;
-	  /* box-shadow: 3px 3px 5px #888; */
+      padding-top: 0.5rem;
+      /* box-shadow: 3px 3px 5px #888; */
   }
   body .title {
 	  margin-left: 0px;
