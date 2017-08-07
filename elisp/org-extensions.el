@@ -12,6 +12,7 @@
          :html-doctype "html5"
          :html-head-include-default-style nil
          :html-head-include-scripts nil
+         :html-head "<link rel='stylesheet' type='text/css' href='assets/css/worg.css' />"
          ;; :html-use-infojs t
          :html-preamble t
          :publishing-function org-html-publish-to-html
