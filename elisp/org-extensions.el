@@ -29,7 +29,6 @@
          :html-head-include-scripts nil
          :html-head "<link rel='stylesheet' type='text/css' href='/assets/css/worg.css' />"
          :html-preamble t
-         :auto-sitemap t
          :publishing-function org-html-publish-to-html
          :headline-levels 4
          :auto-preamble t)
