@@ -13,7 +13,21 @@
          :html-head-include-default-style nil
          :html-head-include-scripts nil
          :html-head "<link rel='stylesheet' type='text/css' href='/assets/css/worg.css' />"
-         ;; :html-use-infojs t
+         ;;:html-use-infojs t
+         :html-preamble t
+         :auto-sitemap t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 4
+         :auto-preamble t)
+       ("org-common"
+         :base-directory "~/notes/"
+         :base-extension "org"
+         :publishing-directory "~/notes_html/"
+	 :include ("about.org")
+         :html-doctype "html5"
+         :html-head-include-default-style nil
+         :html-head-include-scripts nil
+         :html-head "<link rel='stylesheet' type='text/css' href='/assets/css/worg.css' />"
          :html-preamble t
          :auto-sitemap t
          :publishing-function org-html-publish-to-html
@@ -26,8 +40,8 @@
          :recursive t
          :publishing-function org-publish-attachment)
        ("note"
-         :components ("note-org" "note-static")
-         :author "ucshell@outlook.com")))
+         :components ("org-notes" "org-common" "org-static")
+         :author "ucshell AT outlook DOT com")))
   :bind
   ("C-c l" . org-store-link)
   ("C-c a" . org-agenda))
