@@ -16,6 +16,8 @@
          ;;:html-use-infojs t
          :html-preamble t
          :auto-sitemap t
+         :sitemap-file-entry-format "%d %t"
+         :sitemap-date-format "%Y-%m-%d"
          :publishing-function org-html-publish-to-html
          :headline-levels 4
          :auto-preamble t)
@@ -23,7 +25,7 @@
          :base-directory "~/notes/"
          :base-extension "org"
          :publishing-directory "~/notes_html/"
-	 :include ("about.org")
+         :include ("about.org")
          :html-doctype "html5"
          :html-head-include-default-style nil
          :html-head-include-scripts nil
