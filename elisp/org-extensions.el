@@ -17,7 +17,7 @@
          :html-preamble t
          :auto-sitemap t
          :sitemap-file-entry-format "%d %t"
-         :sitemap-date-format "%Y-%m-%d"
+         :sitemap-date-format "%Y-%m"
          :publishing-function org-html-publish-to-html
          :headline-levels 4
          :auto-preamble t)
